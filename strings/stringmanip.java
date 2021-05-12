@@ -37,5 +37,4 @@ public class stringmanip {
         boolean value = string.equals(comparator);
         return value;
     }
-
 }
