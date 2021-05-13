@@ -14,7 +14,7 @@ CREATE TABLE enrollment(
 );
 CREATE TABLE classes(
   class_id PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  class_subject VARCHAR NOT NULL,
-  descrip VARCHAR,
+  class_subject VARCHAR(255) NOT NULL,
+  descrip VARCHAR(255),
   lvl INT
 );
