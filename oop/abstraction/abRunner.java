@@ -14,7 +14,7 @@ public class abRunner {
         parkingLot.printList();
         parkingLot.removeLocomotive(Mazda);
         parkingLot.printList();
-        parkingLot.addLocomotive(Mazda);
+        parkingLot.addLocomotive(terry);
         parkingLot.printList();
     }
     
