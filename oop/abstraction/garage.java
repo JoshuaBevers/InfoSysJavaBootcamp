@@ -1,5 +1,6 @@
 package oop.abstraction;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class garage {
@@ -35,20 +36,48 @@ public class garage {
     if (!this.garageList.isEmpty()) {
       int index = 0;
       for (int i = 0; i < this.garageList.size(); i++) {
-
         if (this.garageList.get(i).ID == Search) {
-
           index = i;
-        } 
+        }
       }
       this.garageList.remove(index);
-
     } else {
       System.out.println("Nothing in the garage to remove.");
     }
   }
 
-  public void removeAll(){
+  public void removeByType(String givenType) {
+    if (!this.garageList.isEmpty()) {
+      List<vehical> indexesToRemove = new ArrayList<vehical>();
+      for (int i = 0; i < this.garageList.size(); i++) {
+        vehical e = this.garageList.get(i);
+        if (givenType == "car") {
+          if (e instanceof car) {
+            indexesToRemove.add(e);
+          }
+        }
+        if (givenType == "plane") {
+          if (e instanceof plane) {
+            indexesToRemove.add(e);
+          }
+        }
+        if (givenType == "motocycle") {
+          if (e instanceof motocycle) {
+            indexesToRemove.add(e);
+          }
+        }
+        //remove by types.
+        indexesToRemove.forEach(index -> {
+          System.out.println(index);
+          this.garageList.remove(index);
+        });
+      }
+    } else {
+      System.out.println("Nothing in the garage to remove.");
+    }
+  }
+
+  public void removeAll() {
     if (!this.garageList.isEmpty()) {
       this.garageList.clear();
     } else {

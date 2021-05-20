@@ -31,6 +31,12 @@ public class abRunner {
         parkingLot.removeAll();
         parkingLot.printList();
 
+        //remove by type
+        parkingLot.addLocomotive(megaman);
+        parkingLot.printList();
+        parkingLot.removeByType("plane");
+        parkingLot.printList();
+
 
     }
     
