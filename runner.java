@@ -1,12 +1,8 @@
 import arrays.arraylooping;
 import classes.book;
 import fizzbuzz.buzzy;
-import oop.abstraction.abRunner;
 import oop.Employee;
-import oop.abstraction.car;
-import oop.abstraction.garage;
-import oop.abstraction.motocycle;
-import oop.abstraction.vehical;
+import oop.abstraction.abRunner;
 import oop.bird;
 import oop.duck;
 
@@ -30,9 +26,5 @@ public class runner {
 
     // oop.abstraction Here we begin new runner format to truncate code in the main runner.
     abRunner.RUNNER();
-   
-
-
-
   }
 }
