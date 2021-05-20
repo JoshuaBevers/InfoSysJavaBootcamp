@@ -15,5 +15,23 @@ public class motocycle extends vehical {
     public void setRepairShops(String repairShops) {
         this.repairShops = repairShops;
     }
+
+    @Override
+    public String toString() {
+      return (
+        "Model: " +
+        this.model +
+        "\n" +
+        "Year: " +
+        this.year +
+        "\n" +
+        "Manufacturer: " +
+        this.manufacturer +
+        "\n" +
+        "Repair shops: " +
+        this.repairShops +
+        "\n"
+      );
+    }
     
 }

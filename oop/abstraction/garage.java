@@ -21,9 +21,7 @@ public class garage {
   public void printList() {
     if (!this.garageList.isEmpty()) {
       System.out.println("");
-      System.out.println(this.garageList.iterator().next().manufacturer);
-      System.out.println(this.garageList.iterator().next().model);
-      System.out.println(this.garageList.iterator().next().year);
+      System.out.println(this.garageList.iterator().next().toString());
     } else {
         System.out.println("Sorry! You have no cars!");
     }

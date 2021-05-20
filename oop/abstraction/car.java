@@ -16,4 +16,22 @@ public class car extends vehical {
   public void setDoorNumber(int doorNumber) {
     this.doorNumber = doorNumber;
   }
+
+  @Override
+  public String toString() {
+    return (
+      "Model: " +
+      this.model +
+      "\n" +
+      "Year: " +
+      this.year +
+      "\n" +
+      "Manufacturer: " +
+      this.manufacturer +
+      "\n" +
+      "Door Number: " +
+      this.doorNumber +
+      "\n"
+    );
+  }
 }
