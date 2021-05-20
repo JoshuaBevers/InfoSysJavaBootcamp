@@ -21,8 +21,6 @@ public class garage {
   public double calcBill() {
     //get vehical types.
     double bill = 0.00;
-    int carCount = 0;
-    int motoCount = 0;
     for (int i = 0; i < this.garageList.size(); i++) {
       if (this.garageList.get(i) instanceof car) {
         bill = bill + 12.57;
