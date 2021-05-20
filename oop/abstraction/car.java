@@ -4,8 +4,9 @@ public class car extends vehical {
 
   protected int doorNumber;
 
-  public car(String model, int year, String manufacturer, int doorNumber) {
-    super(model, year, manufacturer);
+
+  public car(int ID, String model, int year, String manufacturer, int doorNumber) {
+    super(ID, model, year, manufacturer);
     this.doorNumber = doorNumber;
   }
 
