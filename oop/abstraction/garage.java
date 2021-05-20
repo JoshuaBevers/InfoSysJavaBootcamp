@@ -48,6 +48,14 @@ public class garage {
     }
   }
 
+  public void removeAll(){
+    if (!this.garageList.isEmpty()) {
+      this.garageList.clear();
+    } else {
+      System.out.println("Nothing in the garage to remove.");
+    }
+  }
+
   public void printList() {
     if (!this.garageList.isEmpty()) {
       System.out.println("");

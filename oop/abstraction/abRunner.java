@@ -20,6 +20,11 @@ public class abRunner {
         System.out.println("remove by id.");
         parkingLot.removeByID(2);
         parkingLot.printList();
+        motocycle bye = new motocycle(3, "fated", 1993, "BYE BYE", "pasted");
+        parkingLot.addLocomotive(bye);
+        parkingLot.printList();
+        parkingLot.removeAll();
+        parkingLot.printList();
 
 
     }
