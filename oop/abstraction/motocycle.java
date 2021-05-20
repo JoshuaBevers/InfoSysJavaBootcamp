@@ -3,9 +3,9 @@ package oop.abstraction;
 public class motocycle extends vehical {
     protected String repairShops;
 
-    public motocycle(String model, int year, String manufacturer, String repairShops) {
-        super(model, year, manufacturer);
-        this.repairShops = repairShops;
+    public motocycle(int ID, String model, int year, String manufacturer, String repairShops) {
+      super(ID, model, year, manufacturer);
+      this.repairShops = repairShops;
     }
 
     public String getRepairShops() {
