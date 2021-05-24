@@ -5,7 +5,6 @@ import oop.Employee;
 import oop.abstraction.abRunner;
 import oop.bird;
 import oop.duck;
-import oop.expalin.explainrunner;
 
 public class runner {
 
@@ -26,9 +25,7 @@ public class runner {
     // System.out.println(James.calculateWeeklySalary());
 
     // oop.abstraction Here we begin new runner format to truncate code in the main runner.
-    // abRunner.RUNNER();
+    abRunner.RUNNER();
 
-    //temp
-    explainrunner.MYRUNNER();
   }
 }
