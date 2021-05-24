@@ -23,9 +23,15 @@ public class garage {
     //get vehical types.
     double bill = 0.00;
     for (int i = 0; i < this.garageList.size(); i++) {
-      if (this.garageList.get(i) instanceof car) {
-        bill = bill + 12.57;
-      } else {
+      vehical e = this.garageList.get(i);
+      if (e instanceof car) {
+        bill = bill + e.year;
+      }
+      if (e instanceof plane) {
+        //have fun clients.
+        bill = bill + e.ID;
+      }
+      if (e instanceof motocycle) {
         bill = bill + 5;
       }
     }
@@ -45,6 +51,7 @@ public class garage {
       System.out.println("Nothing in the garage to remove.");
     }
   }
+
 
   public void removeByType(String givenType) {
     if (!this.garageList.isEmpty()) {
@@ -67,10 +74,11 @@ public class garage {
           }
         }
         //remove by types.
-        indexesToRemove.forEach(index -> {
-          System.out.println(index);
-          this.garageList.remove(index);
-        });
+        indexesToRemove.forEach(
+          index -> {
+            this.garageList.remove(index);
+          }
+        );
       }
     } else {
       System.out.println("Nothing in the garage to remove.");
